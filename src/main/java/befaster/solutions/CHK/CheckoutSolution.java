@@ -101,14 +101,18 @@ public class CheckoutSolution {
     	/**P**/
     	total=total+((PCount/5)*200)+((PCount%5)*50);
     	 /**P**/
+    	 /**Q**/
+    	if(QCount>=1){
+    		QCount=QCount-(RCount/2);
+        	}
+    	if(QCount>=1){
+    	total=total+((QCount/3)*80)+((QCount%3)*30);
+    	}
+    	/**Q**/
+    	
+    	
+    	
     	   	return total;
         //throw new SolutionNotImplementedException();
     }
 }
-
-
-
-
-
-
-
