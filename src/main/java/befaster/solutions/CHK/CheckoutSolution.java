@@ -103,7 +103,7 @@ public class CheckoutSolution {
     	 /**P**/
     	 /**Q**/
     	if(QCount>=1){
-    		QCount=QCount-(RCount/2);
+    		QCount=QCount-(RCount/3);
         	}
     	if(QCount>=1){
     	total=total+((QCount/3)*80)+((QCount%3)*30);
@@ -137,6 +137,7 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
 
