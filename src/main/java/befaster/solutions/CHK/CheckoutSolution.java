@@ -6,7 +6,7 @@ public class CheckoutSolution {
     public Integer checkout(String skus) {
     	System.out.println("  :::: "+skus);
     	int total=0;
-    	int ACount=0,BCount=0,ECount=0,FCount=0,HCount=0,KCount=0,NCount=0,MCount=0;
+    	int ACount=0,BCount=0,ECount=0,FCount=0,HCount=0,KCount=0,NCount=0,MCount=0,PCount=0;
     	char[] c=skus.toCharArray();
     	if(skus.length()==0){
     		return 0;
@@ -32,7 +32,7 @@ public class CheckoutSolution {
     		}else if(c[i]=='I'){total=total+35;}else if(c[i]=='J'){total=total+60;
     		}else if(c[i]=='K'){KCount=KCount+1;}else if(c[i]=='L'){total=total+90;
     		}else if(c[i]=='M'){MCount=MCount+1;}else if(c[i]=='N'){NCount=NCount+1;total=total+40;
-    		}else if(c[i]=='O'){total=total+10;}else if(c[i]=='P'){FCount=FCount+1;
+    		}else if(c[i]=='O'){total=total+10;}else if(c[i]=='P'){PCount=PCount+1;
     		}else if(c[i]=='Q'){FCount=FCount+1;}else if(c[i]=='R'){FCount=FCount+1;
     		}else if(c[i]=='S'){total=total+30;}else if(c[i]=='T'){total=total+20;
     		}else if(c[i]=='U'){FCount=FCount+1;}else if(c[i]=='V'){FCount=FCount+1;
@@ -95,13 +95,17 @@ public class CheckoutSolution {
     	 /**M**/
     	if(MCount>=1){
         	MCount=MCount-(NCount/3);
+        	total=total+(MCount*15);
         	}
     	 /**M**/
-    	
+    	/**P**/
+    	total=total+((PCount/5)*200)+((PCount%5)*50);
+    	 /**P**/
     	   	return total;
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
 
