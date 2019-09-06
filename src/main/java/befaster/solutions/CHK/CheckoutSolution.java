@@ -35,10 +35,10 @@ public class CheckoutSolution {
     		}else if(c[i]=='M'){MCount=MCount+1;}else if(c[i]=='N'){NCount=NCount+1;total=total+40;
     		}else if(c[i]=='O'){total=total+10;}else if(c[i]=='P'){PCount=PCount+1;
     		}else if(c[i]=='Q'){QCount=QCount+1;}else if(c[i]=='R'){RCount=RCount+1;total=total+50;
-    		}else if(c[i]=='S'){total=total+30;}else if(c[i]=='T'){total=total+20;
+    		}else if(c[i]=='S'){SCount=SCount+1;}else if(c[i]=='T'){TCount=TCount+1;
     		}else if(c[i]=='U'){UCount=UCount+1;}else if(c[i]=='V'){VCount=VCount+1;
-    		}else if(c[i]=='W'){total=total+20;}else if(c[i]=='X'){total=total+90;
-    		}else if(c[i]=='Y'){total=total+10;}else if(c[i]=='Z'){total=total+50;
+    		}else if(c[i]=='W'){total=total+20;}else if(c[i]=='X'){XCount=XCount+1;
+    		}else if(c[i]=='Y'){YCount=YCount+1;}else if(c[i]=='Z'){ZCount=ZCount+1;
     		}
     		else{
     			return -1;
@@ -133,9 +133,15 @@ public class CheckoutSolution {
     	total=total+((VCount/2)*90)+((VCount%2)*50);
     	}
     	 /**V**/
+    	/**S,T,X,Y,Z**/
+    	
+    	
+    	/**S,T,X,Y,Z**/
+    	
     	
     	   	return total;
         //throw new SolutionNotImplementedException();
     }
 }
+
 
