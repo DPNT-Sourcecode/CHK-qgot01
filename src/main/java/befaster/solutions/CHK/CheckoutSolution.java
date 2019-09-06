@@ -143,5 +143,3 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
-
-
