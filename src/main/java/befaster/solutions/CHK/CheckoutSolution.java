@@ -6,7 +6,7 @@ public class CheckoutSolution {
     public Integer checkout(String skus) {
     	System.out.println("  :::: "+skus);
     	int total=0;
-    	int ACount=0,BCount=0;
+    	int ACount=0,BCount=0,ECount=0;
     	char[] c=skus.toCharArray();
     	if(skus.length()==0){
     		return 0;
@@ -25,7 +25,11 @@ public class CheckoutSolution {
     		}
     		else if(c[i]=='D'){
     			total=total+15;
-    		}else{
+    		}else if(c[i]=='E'){
+    			ECount=ECount+1;
+    			//total=total+15;
+    		}
+    		else{
     			return -1;
     		}
     	}
@@ -36,3 +40,4 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
+
