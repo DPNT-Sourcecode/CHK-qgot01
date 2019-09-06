@@ -27,23 +27,28 @@ public class CheckoutSolution {
     			total=total+15;
     		}else if(c[i]=='E'){
     			ECount=ECount+1;
-    			//total=total+15;
+    			total=total+40;
     		}
     		else{
     			return -1;
     		}
     	}
     	if(ACount>=5){total=total+((ACount/5)*200);
-    	if((ACount%5)>=3){total=total+((ACount/3)*130)+((ACount%3)*50);}else{
+    	if((ACount%5)>=3){total=total+((ACount/3)*130)+((ACount%3)*50);}
+    	else{
     		total=total+((ACount%5)*50);
-    	}}else{
-    	total=total+((ACount/3)*130)+((ACount%3)*50);}
+    	}
+    	}else{
+    	total=total+((ACount/3)*130)+((ACount%3)*50);
+    	}
     	total=total+((BCount/2)*45)+((BCount%2)*30);
+    	total=total+(ECount/2)
     	
     	return total;
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
 
