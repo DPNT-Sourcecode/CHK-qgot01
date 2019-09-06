@@ -42,15 +42,9 @@ public class CheckoutSolution {
     	total=total+((ACount/3)*130)+((ACount%3)*50);
     	}
     	total=total+((BCount/2)*45)+((BCount%2)*30);
-    	total=total+(ECount/2)
+    	total=total-((ECount/2)*30);
     	
     	return total;
         //throw new SolutionNotImplementedException();
     }
 }
-
-
-
-
-
-
