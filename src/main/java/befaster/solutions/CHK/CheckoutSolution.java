@@ -33,8 +33,13 @@ public class CheckoutSolution {
     			return -1;
     		}
     	}
-    	if(ACount>=5){total=total+((ACount/5)*200);
-    	if((ACount%5)>=3){total=total+((ACount/3)*130)+((ACount%3)*50);}
+    	int RmdrACount=0;
+    	if(ACount>=5){
+    		total=total+((ACount/5)*200);
+    		RmdrACount=(ACount%5);
+    	if(RmdrACount>=3){
+    		total=total+((RmdrACount/3)*130)+((RmdrACount%3)*50);
+    	}
     	else{
     		total=total+((ACount%5)*50);
     	}
@@ -42,9 +47,12 @@ public class CheckoutSolution {
     	total=total+((ACount/3)*130)+((ACount%3)*50);
     	}
     	total=total+((BCount/2)*45)+((BCount%2)*30);
+    	if(BCount>=1){
     	total=total-((ECount/2)*30);
+    	}
     	
     	return total;
         //throw new SolutionNotImplementedException();
     }
 }
+
