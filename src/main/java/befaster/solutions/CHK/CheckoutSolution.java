@@ -57,11 +57,12 @@ public class CheckoutSolution {
     	if(FCount>=1){
         	FCount=FCount-(FCount/2);
         	}
-    	total=total+((FCount/2)*10)+((BCount%2)*10);
+    	total=total+(FCount*10);
     	return total;
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
 
