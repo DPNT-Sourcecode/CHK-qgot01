@@ -8,6 +8,9 @@ public class CheckoutSolution {
     	int total=0;
     	int ACount=0,BCount=0;
     	char[] c=skus.toCharArray();
+    	if(skus.length()==0){
+    		return -1;
+    	}
     	for(int i=0;i<c.length;i++){
     		if(c[i]=='A' || c[i]=='a'){
     			ACount=ACount+1;
@@ -31,6 +34,7 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
 
