@@ -55,7 +55,7 @@ public class CheckoutSolution {
     	total=total+((BCount/2)*45)+((BCount%2)*30);
     	}
     	if(FCount>2){
-    	total=total+((FCount/3)*20)+((FCount%1)*10);
+    	total=total+((FCount/3)*20)+((FCount%3)*10);
     	}
     	else{
     		total=total+(FCount*10);
@@ -64,5 +64,6 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
