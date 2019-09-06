@@ -116,7 +116,7 @@ public class CheckoutSolution {
     	else{
     		total=total+(UCount*40);
     	}
-    	 /**F**/
+    	 /**U**/
     	/**V**/
     	int RmdrVCount=0;
     	if(VCount>=3){
@@ -137,6 +137,7 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
 
