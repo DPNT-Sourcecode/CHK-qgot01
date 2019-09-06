@@ -78,17 +78,17 @@ public class CheckoutSolution {
     	 /**F**/
     	 /**H**/
     	int RmdrHCount=0;
-    	if(HCount>=5){
-    		total=total+((HCount/5)*200);
-    		RmdrHCount=(HCount%5);
-    	if(RmdrHCount>=3){
-    		total=total+((RmdrHCount/3)*130)+((RmdrHCount%3)*50);
+    	if(HCount>=10){
+    		total=total+((HCount/10)*80);
+    		RmdrHCount=(HCount%10);
+    	if(RmdrHCount>=5){
+    		total=total+((RmdrHCount/5)*45)+((RmdrHCount%5)*10);
     	}
     	else{
-    		total=total+((HCount%5)*50);
+    		total=total+((HCount%10)*10);
     	}
     	}else{
-    	total=total+((HCount/3)*130)+((HCount%3)*50);
+    	total=total+((HCount/5)*45)+((HCount%5)*10);
     	}
     	 /**A**/
     	
@@ -97,4 +97,5 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
+
 
