@@ -14,11 +14,11 @@ public class CheckoutSolution {
     	for(int i=0;i<c.length;i++){
     		if(c[i]=='A'){
     			ACount=ACount+1;
-    			//total=total+50;
+    			
     		}
     		else if(c[i]=='B'){
     			BCount=BCount+1;
-    			//total=total+30;
+    			
     		}
     		else if(c[i]=='C'){
     			total=total+20;
@@ -64,6 +64,7 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
 
