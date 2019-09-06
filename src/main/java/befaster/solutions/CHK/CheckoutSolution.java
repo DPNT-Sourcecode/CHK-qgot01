@@ -135,7 +135,8 @@ public class CheckoutSolution {
     	 /**V**/
     	/**S,T,X,Y,Z**/
     	if((SCount+TCount+XCount)>=3){
-    		total=total+((SCount+TCount+XCount)/3);
+    		total=total+((SCount+TCount+XCount)/3)*45;
+    		
     	}
     		
     	
@@ -146,3 +147,4 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
+
