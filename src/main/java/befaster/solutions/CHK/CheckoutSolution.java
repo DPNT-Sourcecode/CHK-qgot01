@@ -54,13 +54,15 @@ public class CheckoutSolution {
     	if(BCount>=1){
     	total=total+((BCount/2)*45)+((BCount%2)*30);
     	}
-    	total=total+((FCount/2)*10)+((FCount%2)*10);
-    	if(FCount>=1){
-        	FCount=FCount-(FCount/2);
-        	}
-    	total=total+(FCount*10);
-    	return total;
+    	if(FCount>2){
+    	total=total+((FCount/3)*20)+((FCount%1)*10);
+    	}
+    	else{
+    		total=total+(FCount*10);
+    	}
+    	   	return total;
         //throw new SolutionNotImplementedException();
     }
 }
+
 
