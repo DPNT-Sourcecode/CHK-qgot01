@@ -24,10 +24,14 @@ public class CheckoutSolution {
     			total=total+15;
     		}
     	}
+    	total=total+((ACount/3)*130)+((ACount%3)*50);
+    	total=total+((BCount/2)*45)+((BCount%2)*50);
+    	
     	return total;
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
 
