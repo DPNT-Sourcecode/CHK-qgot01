@@ -34,7 +34,9 @@ public class CheckoutSolution {
     		}
     	}
     	if(ACount>=5){total=total+((ACount/5)*200);
-    	if((ACount%5)>=3){total=total+((ACount/3)*130)+((ACount%3)*50);}}else{
+    	if((ACount%5)>=3){total=total+((ACount/3)*130)+((ACount%3)*50);}else{
+    		total=total+((ACount%5)*50);
+    	}}else{
     	total=total+((ACount/3)*130)+((ACount%3)*50);}
     	total=total+((BCount/2)*45)+((BCount%2)*30);
     	
@@ -42,6 +44,7 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
 
