@@ -6,7 +6,7 @@ public class CheckoutSolution {
     public Integer checkout(String skus) {
     	System.out.println("  :::: "+skus);
     	int total=0;
-    	int ACount=0,BCount=0,ECount=0,FCount=0,HCount=0,KCount=0;;
+    	int ACount=0,BCount=0,ECount=0,FCount=0,HCount=0,KCount=0,NCount=0;
     	char[] c=skus.toCharArray();
     	if(skus.length()==0){
     		return 0;
@@ -33,7 +33,7 @@ public class CheckoutSolution {
     		}else if(c[i]=='G'){total=total+20;}else if(c[i]=='H'){HCount=HCount+1;
     		}else if(c[i]=='I'){total=total+35;}else if(c[i]=='J'){total=total+60;
     		}else if(c[i]=='K'){KCount=KCount+1;}else if(c[i]=='L'){total=total+90;
-    		}else if(c[i]=='M'){FCount=FCount+1;}else if(c[i]=='N'){FCount=FCount+1;
+    		}else if(c[i]=='M'){FCount=FCount+1;}else if(c[i]=='N'){NCount=NCount+1;total=total+40;
     		}else if(c[i]=='O'){total=total+10;}else if(c[i]=='P'){FCount=FCount+1;
     		}else if(c[i]=='Q'){FCount=FCount+1;}else if(c[i]=='R'){FCount=FCount+1;
     		}else if(c[i]=='S'){total=total+30;}else if(c[i]=='T'){total=total+20;
@@ -94,14 +94,17 @@ public class CheckoutSolution {
     	 /**K**/
     	total=total+((KCount/2)*150)+((KCount%2)*80);
     	 /**K**/
-    	 /**N**/
-    	
-    	 /**N**/
+    	 /**M**/
+    	if(BCount>=1){
+        	BCount=BCount-(NCount/3);
+        	}
+    	 /**M**/
     	
     	   	return total;
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
 
