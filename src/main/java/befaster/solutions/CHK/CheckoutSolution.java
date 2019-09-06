@@ -30,7 +30,6 @@ public class CheckoutSolution {
     			total=total+40;
     		}else if(c[i]=='F'){
     			FCount=FCount+1;
-    			total=total+10;
     		}
     		else{
     			return -1;
@@ -50,16 +49,19 @@ public class CheckoutSolution {
     	total=total+((ACount/3)*130)+((ACount%3)*50);
     	}
     	if(BCount>=1){
-        	//total=total-((ECount/2)*30);
         	BCount=BCount-(ECount/2);
         	}
     	if(BCount>=1){
     	total=total+((BCount/2)*45)+((BCount%2)*30);
     	}
-    	total=total-((FCount/2)*10);
+    	if(FCount>=1){
+        	FCount=FCount-(FCount/2);
+        	}
+    	total=total+((FCount/2)*10)+((BCount%2)*10);
     	return total;
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
