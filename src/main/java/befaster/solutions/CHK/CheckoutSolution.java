@@ -30,6 +30,17 @@ public class CheckoutSolution {
     			total=total+40;
     		}else if(c[i]=='F'){
     			FCount=FCount+1;
+    		}else if(c[i]=='G'){FCount=FCount+1;}else if(c[i]=='H'){FCount=FCount+1;
+    		}else if(c[i]=='I'){FCount=FCount+1;}else if(c[i]=='J'){FCount=FCount+1;
+    		}else if(c[i]=='K'){FCount=FCount+1;}else if(c[i]=='L'){FCount=FCount+1;
+    		}else if(c[i]=='M'){FCount=FCount+1;}else if(c[i]=='N'){FCount=FCount+1;
+    		}else if(c[i]=='O'){FCount=FCount+1;}else if(c[i]=='P'){FCount=FCount+1;
+    		}else if(c[i]=='Q'){FCount=FCount+1;}else if(c[i]=='R'){FCount=FCount+1;
+    		}else if(c[i]=='S'){FCount=FCount+1;}else if(c[i]=='T'){FCount=FCount+1;
+    		}else if(c[i]=='U'){FCount=FCount+1;}else if(c[i]=='V'){FCount=FCount+1;
+    		}else if(c[i]=='W'){FCount=FCount+1;}else if(c[i]=='X'){FCount=FCount+1;
+    		}else if(c[i]=='Y'){FCount=FCount+1;}else if(c[i]=='Z'){FCount=FCount+1;
+    		}
     		}
     		else{
     			return -1;
@@ -64,6 +75,7 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
 
