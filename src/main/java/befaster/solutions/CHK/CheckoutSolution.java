@@ -50,13 +50,11 @@ public class CheckoutSolution {
         	//total=total-((ECount/2)*30);
         	BCount=BCount-(ECount/2);
         	}
+    	if(BCount>=1){
     	total=total+((BCount/2)*45)+((BCount%2)*30);
-    	
+    	}
     	
     	return total;
         //throw new SolutionNotImplementedException();
     }
 }
-
-
-
