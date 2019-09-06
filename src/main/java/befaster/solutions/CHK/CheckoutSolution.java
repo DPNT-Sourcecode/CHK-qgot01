@@ -7,6 +7,7 @@ public class CheckoutSolution {
     	System.out.println("  :::: "+skus);
     	int total=0;
     	int ACount=0,BCount=0,ECount=0,FCount=0,HCount=0,KCount=0,NCount=0,MCount=0,PCount=0,QCount=0,RCount=0,UCount=0,VCount=0;
+    	int SCount=0,TCount=0,XCount=0,YCount=0,ZCount=0;
     	char[] c=skus.toCharArray();
     	if(skus.length()==0){
     		return 0;
@@ -137,3 +138,4 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
+
