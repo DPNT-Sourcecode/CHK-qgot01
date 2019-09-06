@@ -6,7 +6,7 @@ public class CheckoutSolution {
     public Integer checkout(String skus) {
     	System.out.println("  :::: "+skus);
     	int total=0;
-    	int ACount=0,BCount=0,ECount=0,FCount=0;
+    	int ACount=0,BCount=0,ECount=0,FCount=0,HCount=0;
     	char[] c=skus.toCharArray();
     	if(skus.length()==0){
     		return 0;
@@ -36,10 +36,10 @@ public class CheckoutSolution {
     		}else if(c[i]=='M'){FCount=FCount+1;}else if(c[i]=='N'){FCount=FCount+1;
     		}else if(c[i]=='O'){total=total+10;}else if(c[i]=='P'){FCount=FCount+1;
     		}else if(c[i]=='Q'){FCount=FCount+1;}else if(c[i]=='R'){FCount=FCount+1;
-    		}else if(c[i]=='S'){FCount=FCount+1;}else if(c[i]=='T'){FCount=FCount+1;
+    		}else if(c[i]=='S'){total=total+30;}else if(c[i]=='T'){total=total+20;
     		}else if(c[i]=='U'){FCount=FCount+1;}else if(c[i]=='V'){FCount=FCount+1;
-    		}else if(c[i]=='W'){FCount=FCount+1;}else if(c[i]=='X'){FCount=FCount+1;
-    		}else if(c[i]=='Y'){FCount=FCount+1;}else if(c[i]=='Z'){FCount=FCount+1;
+    		}else if(c[i]=='W'){total=total+20;}else if(c[i]=='X'){total=total+90;
+    		}else if(c[i]=='Y'){total=total+10;}else if(c[i]=='Z'){total=total+50;;
     		}
     		}
     		else{
@@ -75,9 +75,3 @@ public class CheckoutSolution {
         //throw new SolutionNotImplementedException();
     }
 }
-
-
-
-
-
-
