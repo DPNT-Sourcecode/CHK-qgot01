@@ -37,7 +37,7 @@ public class CheckoutSolution {
     		}else if(c[i]=='S'){total=total+30;}else if(c[i]=='T'){total=total+20;
     		}else if(c[i]=='U'){UCount=UCount+1;}else if(c[i]=='V'){VCount=VCount+1;
     		}else if(c[i]=='W'){total=total+20;}else if(c[i]=='X'){total=total+90;
-    		}else if(c[i]=='Y'){total=total+10;}else if(c[i]=='Z'){total=total+50;;
+    		}else if(c[i]=='Y'){total=total+10;}else if(c[i]=='Z'){total=total+50;
     		}
     		else{
     			return -1;
@@ -120,22 +120,23 @@ public class CheckoutSolution {
     	/**V**/
     	int RmdrVCount=0;
     	if(VCount>=3){
-    		total=total+((VCount/3)*200);
+    		total=total+((VCount/3)*130);
     		RmdrVCount=(VCount%3);
     	if(RmdrVCount>=2){
-    		total=total+((RmdrVCount/2)*130)+((RmdrVCount%2)*50);
+    		total=total+((RmdrVCount/2)*90)+((RmdrVCount%2)*50);
     	}
     	else{
     		total=total+((VCount%3)*50);
     	}
     	}else{
-    	total=total+((VCount/2)*130)+((VCount%2)*50);
+    	total=total+((VCount/2)*90)+((VCount%2)*50);
     	}
-    	 /**A**/
+    	 /**V**/
     	
     	   	return total;
         //throw new SolutionNotImplementedException();
     }
 }
+
 
 
